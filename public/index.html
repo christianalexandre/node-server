@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="FAQ - Segurança Eletrônica">
+	<meta name="author" content="Intelbras">
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+	<link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<title>FAQ - Segurança Eletrônica</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar text-dark">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand text-center">
+					<img src="../resources/img/intelbras_marca.svg">
+        		</a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#content">
+							<span class="align-middle">Apresentação</span>
+           				</a>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#novidades" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Novidades</span>
+						</a>
+						<ul id="novidades" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#">Android</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#">iOS</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#compatibilidade" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Compatibilidade</span>
+						</a>
+						<ul id="compatibilidade" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#dispositivos" onclick="clickAccordion()">Dipositivos móveis</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#produtos" onclick="clickAccordion()">Produto Intelbras</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#contaSidebar" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Conta</span>
+						</a>
+						<ul id="contaSidebar" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#criarConta" onclick="clickAccordion(criarConta)">Criar conta</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#login" onclick="clickAccordion(login)">Fazer login</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#alterarSenha" onclick="clickAccordion(alterarSenha)">Alterar senha</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#recuperarSenha" onclick="clickAccordion(recuperarSenha)">Recuperar senha</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#adicaoSidebar" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Adição de dispositivos</span>
+						</a>
+						<ul id="adicaoSidebar" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#metodos" onclick="clickAccordion(metodos)">Diferença dos métodos de conexão</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#adicionar" onclick="clickAccordion(adicionar)">Adicionar dispositivo</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#gerenciar" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Gerenciar dispositivos</span>
+						</a>
+						<ul id="gerenciar" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#editar" onclick="clickAccordion(editar)">Editar dispositivos</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#excluir" onclick="clickAccordion(excluir)">Excluir dispositivos</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#visualizacaoSidebar" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+							<span class="align-middle">Visualização</span>
+						</a>
+						<ul id="visualizacaoSidebar" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#aoVivo" onclick="clickAccordion(aoVivo)">Visualização Ao Vivo (Live View) </a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#playAll" onclick="clickAccordion(playAll)">Reproduzir todos (Play all)</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#playback" onclick="clickAccordion(playback)">Gravações</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#filtrar" onclick="clickAccordion(filtrar)">Filtrar gravações</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#mosaico" onclick="clickAccordion(mosaico)">Mosaico</a></li>
+							<li class="sidebar-item"><a class="sidebar-link sidebar-item-text" href="#excluir" onclick="clickAccordion(editarMosaico)">Editar mosaico</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<div class="row" style="margin-left: 0.1px;">
+				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
+					<div class="d-flex flex-row">
+						<div class="">
+							<a id="hamburger" class="sidebar-toggle d-flex">
+								<i class="hamburger align-self-center"></i>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<main id="content" class="content">	
+                <div class="container col-9" id="manualContent">
+					<!--------------------------------
+                           Apresentação 
+                	--------------------------------->
+					<div class="container" style="height: 100px; border-bottom: 3px solid; position: relative; margin-top: 10%">
+                        <img class="img-logo" src="../resources/img/intelbras_marca.svg" />
+                    </div>
+
+                    <h2 style="text-align: right;">Manual do usuário</h2>
+                    <h3 style="color: #00a335; text-align: right;">ISIC Lite</h3>
+
+                    <div class="align-left text-justify" style="padding-top: 100px" id="">
+                        <h5>Data: 22/06/2022</h5>
+                        <p>Com o Intelbras iSIC LITE você acessa as imagens das câmeras de maneira prática e rápida, 
+                            via smartphone ou tablet. 
+                            O aplicativo permite monitorar até 16 câmeras com imagens transmitidas em tempo real de forma 
+                            rápida, simples e fácil. 
+                        </p>
+                    </div>
+
+                    <div class="line"></div>
+
+					<!--------------------------------
+                          Segurança e Privacidade 
+                    --------------------------------->
+                    <section id="segurancaPrivacidade">
+                        <h2>Segurança e Privacidade</h2>
+                        <p style="color: red"><b>ATENÇÃO: NUNCA COMPARTILHE DADOS DO SEU DISPOSITIVO INTELBRAS. NÚMERO DE SÉRIE, IP, 
+                            PORTA, LOGIN 
+                            OU SENHA NUNCA DEVEM SER COMPARTILHADOS POIS FAZEM PARTE DA SEGURANÇA DO DISPOSITIVO!</b>
+						</p>
+                        <span>
+                            Alguns recursos do ISIC Lite, como por exemplo, as fotos dos canais usadas como referência, não estão 
+                            vinculadas às permissões
+                            de usuário dos dispositivos. Evite compartilhar os dados do seu dispositivo pois as pessoas com quem
+                             compartilhou esses dados 
+                            podem visualizar essas imagens de referência.<br>
+                            <br>
+                            O ISIC Lite não deve ser usado como único recurso para aplicações de vizinhança solidária. Para 
+                            compartilhamento de imagens nesse 
+                            tipo de aplicação, recomendamos o uso de câmeras IP Intelbras.
+                        </span>
+                        </br></br>
+                        <span>
+                            Para gravadores com versão de firmware atualizado contemplando a <b>Lei Geral de Proteção de Dados</b> a 
+                            criptografia de vídeo deve estar desabilitada no equipamento para correta viualização e reprodução 
+                            dos vídeos.
+                        </span>
+                    </section>
+
+					<div class="line"></div>
+
+					<!--------------------------------
+                              Compatibilidade 
+                    --------------------------------->
+                    <section id="dispositivos">
+                        <h2>Dispositivos Móveis</h2>
+                        <ul style="color:#8b979f;">
+                            <li>Compatível com smartphones e tablets:
+                                <ul>
+                                    <li>Para smartphones recomendamos pelo menos 3GB de RAM;</li>
+                                    <li>Para uma melhor experiência, recomendamos o uso de tablets com alto desempenho e no mínimo 4GB de memória RAM;</li>
+                                </ul>
+                            </li>
+                            
+                            <li>A solução é suportada apenas em smartphones e tablets certificados pela ANATEL;</li>
+                            <li>Os smartphones não devem ter suas ROMs e sistemas operacionais alterados com versões não
+                                oficiais (Root ou Jailbreak);</li>
+                            <li>Android: versão igual ou superior a 5.0;</li>
+                            <li>iPhones: Requer o iOS 10 ou posterior, para melhor desempenho recomendamos a versão igual ou superior a 11.0 do iOS;</li>
+                            <li>Tablets: Nosso aplicativo é desenvolvido para uso em smartphones, porém aplicamos a responsividade para uso em Tablets.
+                                Telas que tenham zoom aplicado ou contenham a barra de navegação a qual utiliza botões de navegação, podem influenciar no uso da aplicação quando usada em modo paisagem [landscape], uma das características no uso do zoom e/ou botões de navegação é a rolagem da tela, esta sendo ajustada para que ocorra o mínimo possível.</li>
+                        </ul>
+                    </section>
+
+					<div class="line"></div>
+
+                    <section id="produtos">
+                        <h2>Produtos Intelbras</h2>
+                        <p>Recomendamos que seus dispositivos (DVR, NVR e Câmeras) estejam sempre atualizados com a última versão de firmware disponível. Pois assim, o aplicativo proporciona uma melhor performance. 
+                        </br>Você pode consultar a versão mais atualizada de firmware do seu dispositivo em nosso site 
+                        <a class="link" href="https://www.intelbras.com/pt-br/ajuda-download/download/">clicando aqui</a>.</p>
+                        
+                        <p>O aplicativo ISIC Lite tem compatibilidade com as linhas <b>MHDX</b>, <b>NVD*</b> e <b>VIP</b> 
+                        da Intelbras mas algumas funcionalidades podem não estar presentes em todos os dispositivos. Para 
+                        mais informações consulte o manual do seu produto.</br>
+                        Gravadores e câmeras da Intelbras não relacionados acima podem apresentar limitações nas funcionalidades.
+                        </br></p>
+
+                        <p>*Os NVDs modelo 1204, 1208 e 1216 não são compativeis com <b>playback</b>.</br></p>
+                        <p>*VD 32M960, VD 16E 480 e equivalentes possuem limitações na busca por gravações na timeline de tempo do aplicativo. Suportam a reprodução a partir do início do arquivo no armazenamento interno. Para a localização exata do trecho de vídeo desejado utilize a aceleração da reprodução.</p>
+                    </section>
+
+                    <div class="line"></div>
+
+					<!--------------------------------
+                                  Conta 
+                    --------------------------------->
+                    <section id="conta">
+                        <h2>Conta</h2>
+                        <p>Para usufruir da solução dos produtos de segurança Intelbras, o usuário pode criar uma conta <b>Intelbras 
+                            Cloud</b> para armazenar seus dados e sincronizar seus dispositivos, desta forma ao utilizar outro aparelho, 
+                            seus dispositivos estarão disponíveis após efetuar o login, sem necessidade de cadastrá-los novamente.</p>
+						<!-- accordion -->
+						<div class="accordion w-100 mt-1">
+							<!-- item criar conta -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="criarConta" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#criarContaCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como crio uma conta?
+									</button>
+								</h2>
+									<div id="criarContaCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/menuIcon.svg">, no canto esquerdo superior;</li>
+												<li>Clique em <b>Fazer login ou criar conta</b>;</li>
+												<li>Clique em <b>Criar uma conta Intelbras Cloud</b>;</li>
+												<li>Insira o seu nome de usuário desejado (evite o uso de espaços);</li>
+												<li>Insira o seu E-mail;</li>
+												<li>Insira a sua senha desejada;</li>
+												<li>Confirme sua senha;</li>
+												<li>Insira o <b>Captcha</b>;</li>
+												<li>Clique em <b>CRIAR NOVA CONTA</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item login -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="login" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#loginCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço login na minha conta?
+									</button>
+								</h2>
+									<div id="loginCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/menuIcon.svg">, no canto esquerdo superior;</li>                                            
+												<li>Clique em <b>Fazer login ou criar conta</b>;</li>
+												<li>Insira o seu usuário;</li>
+												<li>Insira a sua senha previamente cadastrada no Intelbras Cloud;</li>
+												<li>Clique em <b>CONECTAR</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item alterar senha -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="alterarSenha" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#alterarSenhaCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para alterar minha senha?
+									</button>
+								</h2>
+									<div id="alterarSenhaCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/menuIcon.svg">, no canto esquerdo superior;</li>                                    
+												<li>Logado em uma conta <b>Intelbras Cloud</b>, clique sobre seu <b>nome de usuário</b>;</li>
+												<li>Clique em <b>Editar Conta</b>;</li>
+												<li>Insira a senha atual;</li>
+												<li>Insira a nova senha;</li>
+												<li>Confirme a nova senha;</li>
+												<li>Clique em <b>Editar Conta</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item alterar senha -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="recuperarSenha" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#recuperarSenhaCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para recuperar minha senha?
+									</button>
+								</h2>
+									<div id="recuperarSenhaCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/menuIcon.svg">, no canto esquerdo superior;</li>                                    
+												<li>Logado em uma conta <b>Intelbras Cloud</b>, clique sobre seu <b>nome de usuário</b>;</li>
+												<li>Clique em <b>Editar Conta</b>;</li>
+												<li>Insira a senha atual;</li>
+												<li>Insira a nova senha;</li>
+												<li>Confirme a nova senha;</li>
+												<li>Clique em <b>Editar Conta</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+						</div>                           
+                    </section>
+
+                    <div class="line"></div>
+
+					<!--------------------------------
+                          Adição de Dispositivos 
+                    --------------------------------->
+                    <section id="adicao">
+                        <h2>Adição de Dispositivos</h2>
+                        <p>Após a instalar o <b>ISIC Lite</b> e criar sua conta, o próximo passo é adicionar seus dispositivos. Existem três <b>modos de adição</b> disponíveis: 
+                            QR Code, Busca na rede, Manual.
+						</p>
+                        <p>
+                            Em qualquer um dos modos de adição acima, é possível cadastrar até três métodos de conexão em cada dispositivo: 
+                            IP Domínio (DDNS) e Cloud, podendo utiliza-los isoladamente ou de forma combinada. 
+                            Basta marcar e preencher os campos para que o dispositivo tenha disponível os métodos de conexão, que será feita de forma automática, 
+                            usando a melhor opção para o seu cenário. 
+                        </p>
+
+						<!-- accordion -->
+						<div class="accordion w-100 mt-1">
+							<!-- item metodos -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="metodos" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#metodosCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Diferenças entre os métodos de conexão:
+									</button>
+								</h2>
+									<div id="metodosCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ul>
+												<li><b>Intelbras Cloud:</b> ao utilizar esse método de conexão, será possível acessá-lo de qualquer local com acesso à internet;</li>
+												<li><b>Endereço de IP:</b> ao utilizar esse método de conexão, deve ser configurado o Endereço IP do dispositivo, 
+													sendo possível o acesso apenas se o usuário estiver conectado na mesma rede. Para acessar de qualquer local da internet, 
+													é necessário utilizar o IP externo¹ da rede onde o dispositivo esteja instalado;</li>
+												<li><b>Domínio (DDNS):</b> utilizando esse método de conexão, será possível acessá-lo de qualquer local com acesso à internet, 
+													desde que haja um nome de domínio ou nome de domínio dinâmico (DDNS)² redirecionado para a rede configurada¹. </li>
+											</ul>
+											<p>¹. Para utilizar esse método de conexão, é necessário que a rede tenha as portas direcionadas para o equipamento. Essa configuração deverá ser feita no modem e/ou roteador (es) ligados à rede. 
+	
+											<br>    ². Os dispositivos de segurança Intelbras (DVRs e NVRs) quase em sua totalidade possuem o recurso Intelbras DDNS, que pode ser criado diretamente no equipamento. Consulte o manual de seu equipamento para maiores informações. </p>
+										   
+										   <p><b>Importante:</b> é necessário que seu dispositivo esteja ligado, conectado à rede e previamente configurado para adicioná-lo ao aplicativo. 
+	
+											<br><b>Recomendação:</b> quando conectado a uma <b>Conta Intelbras Cloud com a versão do iSIC Lite igual ou inferior a 2.4.8</b>, recomendamos não editar ou adicionar novos dispositivos.  
+											<br><b>Boas práticas: </b>recomendamos que o cadastro do dispositivos sejam unicos, não repetindo IPs, Portas e Senhas, desta forma melhorando a usabilidade e evitando conflitos na aplicação.</p>	
+										</div>
+									</div>
+							</div>
+							<!-- item adição -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="adicionar" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#adicionarCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para adicionar um novo dispositivo?
+									</button>
+								</h2>
+									<div id="adicionarCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>
+													<ul class="os-selection">
+														<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+															Clique no botão <img class="icons" src="../resources/img/addDeviceIcon.svg"> no canto 
+															<b>inferior direito</b> da tela inicial do aplicativo;</li>
+														<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+															Clique no botão <img class="icons" src="../resources/img/addDeviceIcon.svg"> no canto 
+															<b>superior direito</b> da tela inicial do aplicativo;</li>
+													</ul>
+												</li>
+												<li>Dê as devidas permissões ao aplicativo se necessário;</li>
+												<li>
+													<ul class="os-selection">
+														<li><b>Opção 1 – QR Code (Intelbras Cloud):</b>
+															<ul>
+																<li>Seleciona a opção <b>QR Code</b>;</li>
+																<li>Faça a leitura do <b>QR Code</b> do seu dispositivo, que fará preenchimento automático no campo Serial Intelbras Cloud. 
+																	Para continar, vá para o passo 5;</li>
+																<li>Se estiver sem acesso ao <b>QR Code</b>, vá para a opção 3 para preencher manualmente o campo de Serial Intelbras Cloud;</li>
+															</ul>
+														</li>
+														<li><b>Opção 2 – Busca na rede:</b>
+															<ul>
+																<li>Seleciona a opção <b>Buscar</b>;</li>
+																<li>Aguarde a busca de seu dispositivo na rede;</li>
+																<li>Selecione o dispositivo encontrado. Para continuar a adição, vá para o passo 5;</li>
+															</ul>
+														</li>
+														<li><b>Opção 3 – Adição Manual</b>
+															<ul>
+																<li>Selecione a opção <b>Manual</b> para adicionar manualmente as informações de acesso;</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>Após escolher uma das opções acima (método de adição), você será direcionado para uma tela de preenchimento das credenciais. 
+													Preencha um nome para o dispositivo, a porta de serviço, o nome de usuário e senha usada no seu dispositivo e os 
+													campos referentes a cada um dos métodos de conexão (IP, DDNS ou Serial) selecionados. </li>
+												<li>
+													<ul class="os-selection">
+														<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+															Clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+															<b>superior direito</b> da tela do aplicativo;</li>
+														<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+															Clique no botão <b>OK</b> no canto <b>superior direito</b> da tela do aplicativo;</li>
+													</ul>
+												</li>
+												</br>
+												<b>ATENÇÃO:</b> Através da função Buscar, serão encontrados apenas os dispositivos instalados na mesma rede do smartphone e conectados ao serviço Intelbras Cloud.</p>
+											</ol>
+										</div>
+									</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="line"></div>
+
+					<!--------------------------------
+                          Gerenciar Dispositivos 
+                    --------------------------------->
+                    <section id="gerenciarDispositivos">
+                        <h2>Gerenciar Dispositivos</h2>
+                        <p>Após adicionar algum dispositivo ao seu aplicativo ou conta é possivel também <b>Editar</b> os dados de acesso a este dispositivo 
+                            e/ou <b>Excluir</b> o dispositivo do seu aplicativo ou conta.</p>
+
+						<!-- accordion -->
+						<div class="accordion w-100 mt-1">
+							<!-- item editar -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="editar" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#editarCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para alterar os dados de acesso ao meu dispositivo?
+									</button>
+								</h2>
+									<div id="editarCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg">, no lado direito do card do dispositivo desejado;</li>
+												<li>Clique em <b>Editar</b>;</li>
+												<li>Insira os novos dados;</li>
+												<li>
+													<ul class="os-selection">
+														<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+															Clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+															<b>superior direito</b> da tela do aplicativo;</li>
+														<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+															Clique no botão <b>OK</b> no canto <b>superior direito</b> da tela do aplicativo;</li>
+													</ul>
+												</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item excluir -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="excluir" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#excluirCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para remover um dispositivo do meu aplicativo ou conta?
+									</button>
+								</h2>
+									<div id="excluirCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg">, no lado direito do card do dispositivo desejado;</li>
+												<li>Clique em <b>Remover</b>;</li>
+												<li>
+													<ul class="os-selection">
+														<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+															Clique no botão <b>EXCLUIR</b> para remover o dispositivo.</li>
+														<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+															Clique no botão <b>OK</b> para remover o dispositivo.</li>
+													</ul>
+												</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+						</div>
+
+					</section>
+
+					<div class="line"></div>
+
+					<!--------------------------------
+                               Visualização 
+                    --------------------------------->
+                    <section id="visualizacao">
+                        <h2>Visualização</h2>
+                        <p>Com o <b>ISIC Lite</b> é possivel visualizar remotamente seu dispositivos e suas gravações. Sendo possivel a visualização <b>Ao Vivo</b> 
+                            de até 16 canais simultaneamente ou a reprodução de <b>Gravações</b> de até 4 canais simultaneamente.
+                        </br>
+                            É possivel filtrar a busca de gravações por <b>Continuo</b>, <b>Movimento</b>, <b>Alarme</b> e <b>Inteligência de vídeo</b>.
+                        </p>
+                        <p><b>Atenção:</b> Devido a comprometimento de performance da aplicação, a busca de gravações é exclusiva para gravações no <b>Stream Principal</b>, não sendo possivel a visualização de gravações no <b>Stream Extra</b>. </br></p>
+
+						<!-- accordion -->
+						<div class="accordion w-100 mt-1">
+							<!-- item aovivo -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="aoVivo" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#aoVivoCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para visualizar as imagens do meu dispositivo em tempo real?
+									</button>
+								</h2>
+									<div id="aoVivoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique sobre o card do <b>dispositivo</b> escolhido;</li>
+												<li>Clique sobre o <b>canal de vídeo</b> desejado;</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item playall -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="playAll" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#playAllCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para reproduzir todos os canais do meu dispositivo em tempo real?
+									</button>
+								</h2>
+									<div id="playAllCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no <b>botão</b> <img class="icons" src="../resources/img/PlayIcon.svg"> no lado direito do nome do dispositivo escolhido;</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item playback -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="playback" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#playbackCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para visualizar as gravações do meu dispositivo?
+									</button>
+								</h2>
+									<div id="playbackCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique sobre o card do <b>dispositivo</b> escolhido;</li>
+												<li>Clique sobre o <b>canal de vídeo</b> desejado;</li>
+												<li>Mova a linha do tempo para o horario desejado, ou clique em <b>Data</b> > <b>Outro</b> 
+													e selecione o dia do mês, hora e minuto desejado;</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item filter -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="filtrar" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#filterCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para filtrar as gravações do meu dispositivo?
+									</button>
+								</h2>
+									<div id="filterCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique sobre o card do <b>dispositivo</b> escolhido;</li>
+												<li>Clique sobre o <b>canal de vídeo</b> desejado;</li>
+												<li>Acima da linha do tempo no lado direito, clique no botão <b>Tipo</b>;</li>
+												<li>Selecione os tipos de gravação que deseja exibir na linha do tempo.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item mosaico -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="mosaico" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#mosaicoCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para alterar o número de canais exibidos em mosaico?
+									</button>
+								</h2>
+									<div id="mosaicoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Na tela de visualização, abaixo do vídeo sendo exibido, clique sobre botão  
+													<img style="margin-left: 0;" src="../resources/img/grid16Channels.svg"> 
+													e escolha entre os mosaicos de 4, 9 ou 16 canais clicando no respectivo botão.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item editarmosaico -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="editarMosaico" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#editarMosaicoCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para adicionar novos canais ao meu mosaico?
+									</button>
+								</h2>
+									<div id="editarMosaicoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Na tela de visualização, mude para o modo mosaico;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/addMosaico.svg"> exibido no mosaico;</li>
+												<li>Selecione o dispositivo que possui o canal que deseja adicionar;</li>
+												<li>Clique sobre o canal escolhido.</li>
+												<p><b>Caso você preencha todos os espaços</b>(grids) <b>de um mosaico, basta arrastar o mosaico para esquerda que mais grids estarão disponiveis.</b></p>
+											</ol>
+										</div>
+									</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="line"></div>
+
+					<!--------------------------------
+                                Informações 
+                    --------------------------------->
+                    <section id="informacoes">
+                        <h2>Informações</h2>
+                        <p>A partir do menu “Informações”, é possível verificar alguns detalhes sobre o dispositivo adicionado, tais como informações gerais e de armazenamento.</p>
+                        <p>Os dados de armazenamento exibidos para cada HD instalado são: Status; Espaço livre; Espaço total; Operação.</p>    
+                        <p>Já os dados exibidos no meu de informações sobre o dispositivo são: <b>Nome do Dispositivo; Status; Modelo; Usuário conectado; Serial; Serial; Modo de operação; 
+                            Porta de serviço; Tipo de conexão; Versão de firmware</b> e QR Code com o número serial para cadastro facilitado do dispositivo em outra conta, além de permitir 
+                            consultar por novas versões de firmware e realizar o processo de atualização do dispositivo.</p>    
+
+						<!-- accordion -->
+						<div class="accordion w-100 mt-1">
+							<!-- item informacoesSobre HD -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="informacoesSobreHD" class="accordion-button collapsed" type="button" data-mdb-toggle="informacoesHDCollapse" data-mdb-target="#TODO" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para visualizar as informações de armazenamento do meu dispositivo?
+									</button>
+								</h2>
+									<div id="informacoesHDCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+													dispositivo desejado;</li>
+												<li>Clique em <b>Informações;</b></li>
+												<li>Clique em <b>Armazenamento</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item informacoesSobre -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="informacoesSobre" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#informacoesSobreCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço para visualizar as informações gerais do meu dispositivo?
+									</button>
+								</h2>
+									<div id="informacoesSobreCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+													dispositivo desejado;</li>
+												<li>Clique em <b>Informações;</b></li>
+												<li>Clique em <b>Sobre</b>.</li>
+											</ol>
+										</div>
+									</div>
+							</div>
+							<!-- item firmware -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button id="firmware" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#firmwareCollapse" aria-expanded="false" aria-controls="collapseOne">
+										Como faço atualizar o firmware de um dispositivo?
+									</button>
+								</h2>
+									<div id="firmwareCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Abra o aplicativo;</li>
+												<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+													dispositivo desejado;</li>
+												<li>Clique em <b>Informações;</b></li>
+												<li>Clique em <b>Sobre</b>.</li>
+												<li>Clique em <b>Verificar novas atualizações</b>.</li>
+												<li>Se houver uma nova atualização, poderá fazer o procedimento para o seu dispositivo;</li>
+												<li>Leia com atenção as informações;</li>
+												<li>Clique em <b>ATUALIZAR AGORA</b>.</li>
+												<li>Aguarde o processo de instalação.</li>
+												<li>Para finalizar clique em <b>VISUALIZAR DISPOSITIVOS</b>.</li>
+											</ol>
+											<p><b>Atenção:</b> Durante o processo de atualização, o dispositivo irá interromper as gravações. Não desligue o equipamento, isso pode causar danos irreparáveis ao seu dispositivo. 
+
+											<br>Se o aplicativo for fechado, ou o celular perder conexão de internet, o dispositivo irá continuar a executar a atualização. 
+												
+											<br>Através da tela principal será apresentado o seguinte ícone <img class="icons" src="../resources/img/ic_update.svg"> indicando que há uma nova atualização. Ao clicar nele, retorne ao passo 7 do tutorial acima. </p>
+										</div>
+									</div>
+							</div>
+						</div>
+                    </section>
+
+                    <div class="line"></div>
+                    <!--------------------------------
+                               Configurações 
+                    --------------------------------->
+                    <section id="configuracoes">
+                        
+                        <h2>Configurações</h2> 
+                        </br>
+
+                        <!----------------------
+                              Notificações
+                        ----------------------->
+                            <h3>Notificações</h3>
+                            <p>O <b>ISIC Lite</b> permite ao usuário receber notificações push para eventos de <b>Detecção de movimento</b>, 
+                                <b>Perda de vídeo</b>, <b>Mascaramento de vídeo</b>, <b>Anormalidade</b>, <b>Inteligências de vídeo</b>
+                            <b>Alarmes Locais</b>, <b>Alarmes Multibox</b>.</br>
+                            Ao receber notificações de <b>Movimento</b>, <b>Perda de Vídeo</b> ou <b>Mascaramento</b>, o usuário pode clicar na mesma para acessar a gravação do 
+                            canal do momento do evento.</br>                            
+                            Alem disso, o aplicativo armazena as últimas 60 notificações como histórico. Ao receber a notificação de nº 61, a mais antiga é excluida 
+                            automaticamente de forma que a última recebida fique armazenada.</p></br></br>     
+
+                            <b>ATENÇÃO:</b></br>
+                            » Consulte no <b>manual do usuário</b> do seu equipamento para saber se este possui o recurso de <b>Notificações PUSH</b>.</br>
+                            » O envio e configuração de notificações é afetado quando todos os canais de um dispositivo que possuam o <b>mesmo nome</b>. Por exemplo: todos os canais 
+                            com o nome <b>VIP Intelbras</b>.</br>
+                            » Por padrão as notificações de anormalidade de <b>HD Cheio/Sem Espaço</b> e <b>Erro no HD</b> serão habilitadas.</br>
+                            » Ao habilitar as notificações de inteligencia de vídeo, todos os tipos de inteligência suportadas pelo aplicativo serão recebidos, estas são:
+                             <b>Linha virtual</b>, <b>Cerca virtual</b>, <b>Retirada de objeto</b> e <b>Abandono de objeto</b>.
+
+							<!-- accordion -->
+							<div class="accordion w-100 mt-1">
+								<!-- item notificacoesVideo -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="notificacoesVideo" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#notificacoesVideoCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para habilitar as notificações de vídeo no meu aplicativo?
+										</button>
+									</h2>
+										<div id="notificacoesVideoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<li>Abra o aplicativo;</li>
+													<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+														dispositivo desejado;</li>
+													<li>Clique em <b>Configurações</b> e depois em <b>Notificações</b>;</li>
+													<li>Selecione a opção desejada entre: <b>Detecção de movimento</b>, <b>Perda de vídeo</b> ou <b>Mascaramento de vídeo</b>;</li>
+													<li>Habilite os <b>canais de vídeo</b> desejados e clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no 
+														canto superior direito para <i><b>salvar</b></i>.</li>
+													<li>
+														<ul class="os-selection">
+															<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+																Habilite os <b>canais de vídeo</b> desejados e clique no botão 
+																<img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+																<b>superior direito</b> da tela do aplicativo para salvar.</li>
+															<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+																Habilite os <b>canais de vídeo</b> desejados e clique no botão <b>OK</b> 
+																no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+														</ul>
+													</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+								<!-- item notificacoesHD -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="notificacoesHD" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#notificacoesHDCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para habilitar as notificações de anormalidade no meu aplicativo?
+										</button>
+									</h2>
+										<div id="notificacoesHDCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<li>Abra o aplicativo;</li>
+													<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+														dispositivo desejado;</li>
+													<li>Clique em <b>Configurações</b> e depois em <b>Notificações</b>;</li>
+													<li>Clique em <b>Anormalidade</b>;</li>
+														<ul class="os-selection">
+															<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+																Selecione as opções desejadas e clique no botão 
+																<img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+																<b>superior direito</b> da tela do aplicativo para salvar.</li>
+															<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+																Selecione as opções desejadas e clique no botão <b>OK</b> 
+																no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+														</ul>
+													</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+								<!-- item notificacoesIVS -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="notificacoesIVS" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#notificacoesIVSCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para habilitar as notificações de inteligência vídeo no meu aplicativo?
+										</button>
+									</h2>
+										<div id="notificacoesIVSCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<li>Abra o aplicativo;</li>
+													<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+														dispositivo desejado;</li>
+													<li>Clique em <b>Configurações</b> e depois em <b>Notificações</b>;</li>
+													<li>Clique em <b>Inteligências de vídeo</b>;</li>
+													<li>
+														<ul class="os-selection">
+															<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+																Habilite os <b>canais de vídeo</b> desejados e clique no botão 
+																<img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+																<b>superior direito</b> da tela do aplicativo para salvar.</li>
+															<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+																Habilite os <b>canais de vídeo</b> desejados e clique no botão <b>OK</b> 
+																no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+														</ul>
+													</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+								<!-- item notificacoesAlarme -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="notificacoesAlarme" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#notificacoesAlarmeCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para habilitar as notificações de alarme no meu aplicativo?
+										</button>
+									</h2>
+										<div id="notificacoesAlarmeCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<li>Abra o aplicativo;</li>
+													<li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+														dispositivo desejado;</li>
+													<li>Clique em <b>Configurações</b> e depois em <b>Notificações</b>;</li>
+													<li>Selecione a opção desejada entre: <b>Alarme local</b> ou <b>Multibox</b>;</li>
+													<li>
+														<ul class="os-selection">
+															<li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+																Habilite as <b>entradas de alarme</b> desejadas e clique no botão 
+																<img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+																<b>superior direito</b> da tela do aplicativo para salvar.</li>
+															<li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+																Habilite as <b>entradas de alarme</b> desejadas e clique no botão <b>OK</b> 
+																no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+														</ul>
+													</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+								<!-- item historicoEventos -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="historicoEventos" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#historicoEventosCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para visualizar as últimas notificações no aplicativo?
+										</button>
+									</h2>
+										<div id="historicoEventosCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<li>Abra o aplicativo;</li>
+													<li>Clique no botão <img class="icons" src="../resources/img/notificationIcon.svg"> no canto superior direito;</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+								<!-- item excluirEventos -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button id="excluirEventos" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#excluirEventosCollapse" aria-expanded="false" aria-controls="collapseOne">
+											Como faço para excluir eventos da lista?
+										</button>
+									</h2>
+										<div id="excluirEventosCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+											<div class="accordion-body">
+												<ol>
+													<img id="android-icon" class="icons" src="../resources/img/androidIcon.svg">                                                                   
+													<li>Na lista de eventos, aplique um clique longo sobre o evento que deseja excluir;</li>
+													<li>Clique em <b>Remover</b>;</li>
+												</ol>
+												<ol>
+													<img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+													<li>Na lista de eventos, arraste o evento da direita para esquerda, e clique em <b>Excluir</b>.</li>
+												</ol>
+												<p>&nbsp &nbsp &nbsp ou</p>
+												<ol>
+													<li>Clique no menu <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no canto superior direito da tela;</li>
+													<li>Clique em <b>Remover notificações</b>;</li>
+													<li>Clique em <b>Remover</b>.</li>
+												</ol>
+											</div>
+										</div>
+								</div>
+							</div>
+
+							<div class="line"></div>
+
+                        <!----------------------
+                           Alterar Senha Disp.
+                        ----------------------->
+                        <div id="alterarSenhaDispositivo">
+                            <h3>Alterar Senha do Dispositivo</h3>
+                            <p> Está função permite a alteração da senha do usuário do <b>dispositivo</b> cadastrado no aplicativo.</br>
+                                <b>Exemplo:</b> se o dispositivo estiver conectado ao aplicativo com o <b>usuário admin</b> a senha alterada será do <b>usuário admin</b>.
+                            </p>
+                            <div class="panel-group" id="alterarSenhaDispParent">
+                                <div class="panel panel-default">
+                                    <div id="alterarSenhaDisp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#alterarSenhaDispParent" href="#alterarSenhaDispCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para alterar a senha do meu dispositivo através do aplicativo?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="alterarSenhaDispCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Abra o aplicativo;</li>
+                                                <li>Clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no lado direito do card do 
+                                                    dispositivo desejado;</li>
+                                                <li>Clique em <b>Configurações</b>;</li>
+                                                <li>Clique em <b>Alterar Senha</b>;</li>
+                                                <li>Insira a senha atual do usuário do dispositivo cadastrado;</li>
+                                                <li>Insira a nova senha;</li>
+                                                <li>Insira novamente a nova senha;</li>
+                                                <li>
+                                                    <ul class="os-selection">
+                                                        <li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+                                                            Clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+                                                            <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                        <li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+                                                            Clique no botão <b>OK</b> no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <div class="line"></div>
+                    <!--------------------------------
+                            Controles de Vídeo 
+                    --------------------------------->
+                    <section id="controleDeVideo">
+                        <h2>Controles de Vídeo</h2>
+                        <p>A partir das versões <b>2.1 Android</b> e <b>2.2 iOS</b> o ISIC Lite conta com novas opções para visualização de gravações, estas são: avanço frame a frame, 
+                            avanço lento (0.5x, 0.25x e 0.125x), avanço rápido (2x, 4x e 8x) e novo botão de Play e Pause, antes encontrado na barra de 
+                            ferramentas da tela de visualização.
+                        </p>
+                        <!----------------------
+                               Play/Pause
+                        ----------------------->
+                        <div id=playPauseCircle>
+                            <h3>Play e Pause</h3>
+                            <p>É possivel durante uma visualização ao vivo ou reprodução de uma gravação pausar um vídeo e voltar a reproduzi-lo.</p>
+
+                            <div class="panel panel-default">
+                                <div id="playPauseCircle" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#playPauseCircleCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para pausar um vídeo?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="playPauseCircleCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">                                        
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="play-pause" src="../resources/img/pauseCircleIcon.svg"> na barra de controle 
+                                                localizada abaixo da linha do tempo;</li>
+                                            <li>Clique no botão <img class="play-pause" src="../resources/img/playCircleIcon.svg"> para retomar o vídeo.</li>
+                                            <a href="#barraDeFerramentas">Clique aqui para saber como utilizar na versão 2.0</a>
+                                            
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------
+                          Avanço Frame a Frame
+                        ----------------------->
+                        <div id="avancoFaF">
+                            <h3>Avanço Frame a Frame</h3>
+                            <p>A função de avanço frame a frame é uma maneira diferente de visualizar suas gravações através da tela de visualização do seu aplicativo. 
+                                Clicando no botão <img class="icons" src="../resources/img/advanceFrameIcon.svg"> a partir da barra de controle localizada abaixo da linha do tempo você pode avançar o vídeo por frames, cada clique 
+                                no botão avança um frame do seu vídeo.
+                            <p>
+                            <div class="panel panel-default">
+                                <div id="avanco" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#avancoFrameCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para avançar uma gravação frame a frame?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="avancoFrameCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização do seu aplicativo em modo de visualização único navegue até o trecho de gravação desejado;</li>
+                                            <li>Realize um clique sobre o botão <img class="icons" src="../resources/img/advanceFrameIcon.svg"> para avançar 1 frame;</li>
+                                            <li>Realize cliques sobre o botão <img class="icons" src="../resources/img/advanceFrameIcon.svg"> até que encontre o momento desejado;</li>
+                                            <li>Clique no botão <img class="play-pause" src="../resources/img/playCircleIcon.svg"> para voltar a reprodução do vídeo.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------
+                          Avanço Lento/Rapido
+                        ----------------------->
+                        <div id="velocidadeVisualizacao">
+                            <h3>Velocidade de Reprodução</h3>
+                            <p>A função de velocidade de reprodução é uma forma de facilitar a busca de um trecho desejado das suas gravações.
+                                Clicando no botão <img class="icons" src="../resources/img/advanceIcon.svg"> você pode escolher a velocidade de     reprodução do vídeo, 
+                                estas podem ser: 0.125x, 0.25x, 0.5x, 1x (normal), 2x, 4x, 8x e 16x. </br>
+                                <b>Atenção:</b> para reproduções com velocidade maior que 8x é necessário que sua rede tenha uma taxa de upload condizente com a resolução do vídeo a ser reproduzido, lembre-se que o vídeo está sendo acessado no seu gravador, e o mesmo precisa ser baixado para ser reproduzido no seu smartphone.
+                            </p>
+
+                            <div class="panel panel-default">
+                                <div id="velocidadeVisu" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#velocidadeVisuCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para alterar a velocidade de reprodução?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="velocidadeVisuCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização do seu aplicativo, em modo de visualização único navegue até o trecho de gravação desejado;</li>
+                                            <li>Realize um clique sobre o botão <img class="icons" src="../resources/img/advanceIcon.svg"> para abrir a seleção 
+                                                da velocidade de reprodução;</li>
+                                            <li>Selecione a velocidade de reprodução desejada;</li>
+                                            <li>Clique novamente no botão <img class="icons" src="../resources/img/advanceIcon.svg"> e selecione a opção <b>1x (normal)</b> 
+                                                ou clique no botão <img class="play-pause" src="../resources/img/pauseCircleIcon.svg"> e 
+                                                depois <img class="play-pause" src="../resources/img/playCircleIcon.svg"> para voltar a velocidade normal da reprodução.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------
+                                  PTZ  
+                        ----------------------->
+                        <div id="ptz">
+                            <h3>PTZ</h3>
+
+                            <p>As câmeras PTZ fazem monitoramento constante em todas as direções.</p>
+                            <p>Os comandos de PTZ são suportados apenas por câmeras com a funcionalidade de <b>Pan, Tilt e
+                                Zoom</b>, não sendo homologados para outros tipos de câmeras, como por exemplo varifocais.<br>
+                                Alem disso, é possivel também configurar o <b>Foco</b> e <b>Iris</b> da câmera.<br>
+                            </p>
+                            <ul>
+                                <li>PAN – É a movimentação horizontal (panorâmica) da câmera.</li>
+                                <li>TILT – É a movimentação vertical da câmera.</li>
+                                <li>ZOOM – Aproximação às imagens da câmera.</li>
+                                <li>FOCO – É o controle de foco da imagem da câmera.</li>
+                                <li>IRIS – É o controle de brilho da imagem da câmera.</li>
+                            </ul>
+
+                            <div class="panel-group" id="ptzParent">
+                                <div class="panel panel-default">
+                                    <div id="ptz" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#ptzParent" href="#ptzCollapse" aria-expanded="false">
+                                            &nbsp &nbsp 
+                                            Como faço para acessar os comandos PTZ da minha câmera?
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="ptzCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <h4>Versões inferiores à 2.2</h4>
+                                            <ol>
+                                                <li>Na tela de visualização clique no botão <b>PTZ</b> acima da linha do tempo;</li>
+                                                <li>Controle a câmera através do joystick ou configure a imagem através dos botões <b>Foco</b>, <b>Iris</b> e <b>Zoom</b>.                                       
+                                            </ol>
+                                            <h4>Versão 2.2 ou superior</h4>
+                                            <ol>
+                                                <li>Na tela de visualização clique no botão <img style="height: 22px; width: 22px; margin-left: 0;" 
+                                                    src="../resources/img/ptzIcon.svg"> 
+                                                    na barra de controles de vídeo;</li>
+                                                <li>Controle a câmera através do joystick ou configure a imagem através dos botões <b>Foco</b>, <b>Iris</b> e <b>Zoom</b>.
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                            Funções Avançadas 
+                    --------------------------------->
+                    <section id="funcionalidades">
+                        <h2>Funções Avançadas</h2>
+                        <p>O ISIC Lite possui também alguns funções que contribuem para a usabilidade no seu dia a dia.</p>
+
+                        <!----------------------
+                            Seleção Multipla 
+                        ----------------------->
+                        <div id="selecaoMultipla">
+                            <h3>Seleção Multipla de Canais</h3>
+                            <p>A seleção multipla de canais é uma forma simples de selecionar canais de diferentes dispositivos através do dashboard. A partir da seleção de dispositivos
+                                 pode-se iniciar a visualização ou criar um novo favorito a partir dos canais selecionados.
+                            </p>
+                            <div class="panel panel-default">
+                                <div id="selecao" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#selecaoCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para selecionar multiplos canais?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="selecaoCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela principal(dashboard) expanda o card de algum dispositivo;</li>
+                                            <li>Realize um clique longo sobre um canal até que o ícone <img class="icons" src="../resources/img/selectedIcon.svg">
+                                                 seja exibido;</li>
+                                            <li>Clique sobre os demais canais que deseja selecionar, inclusive de outros dispositivos;</li>
+                                            <li>Após selecionados, você pode iniciar a reprodução destes canais no botão 
+                                                <img class="icons" src="../resources/img/PlayIcon.svg"> ou salva-los como favoritos no botão
+                                                <img class="icons" src="../resources/img/favoritesIcon.svg">, encontrados no canto superior direito.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!----------------------
+                             Ocultar Canais 
+                        ----------------------->
+                        <div id="ocultarCanais">
+                            <h3>Ocultar Canais</h3>
+                            <p>Esta função permite ao usuário ocultar canais selecionados do seu dashboard de dispositivos.</p>
+
+                            <div class="panel-group" id="ocultarParent">
+                                <div class="panel panel-default">
+                                    <div id="ocultarCanais" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ocultarParent" href="#ocultarCanaisCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para ocultar canais?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="ocultarCanaisCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Na tela principal(dashboard) expanda o card de algum dispositivo;</li>
+                                                <li>Realize um clique longo sobre um dos canais que deseja ocultar até que o mesmo seja com o ícone 
+                                                    <img class="icons" src="../resources/img/selectedIcon.svg">;</li>
+                                                <li>Clique sobre os demais canais que deseja ocultar;</li>
+                                                <li>Após selecionados, clique no menu overflow no lado direito do nome do dispositivo e clique em <b>Ocultar canais</b>.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div id="exibirCanais" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ocultarParent" href="#exibirCanaisCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para voltar a exibir os canais?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="exibirCanaisCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Na tela principal do apliticativo, clique no menu overflow no extremo direito do nome do dispositivo;</li>
+                                                <li>Clique em <b>Exibir canais</b>.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <!----------------------
+                           Alterar Ordem Disp
+                        ----------------------->
+                        <div id="alterarOrdem">
+                            <h3>Alterar Ordem dos Dispositivos</h3>
+                            <p>Esta função permite ao usuário alterar a ordem dos dispositivos no dashboard, mudando de posição os cards de dispositivos.</p>
+
+                            <div class="panel-group" id="alterarOrdemParent">
+                                <div class="panel panel-default">
+                                    <div id="alterarOrdemExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#alterarOrdemParent" href="#alterarOrdemCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para alterar a ordem de um dispositivo?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="alterarOrdemCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Na tela do dashboard, clique e mantenha o dedo sobre o card que deseja mover;</li>
+                                                <li>Arraste o card para cima ou para baixo de forma que ocupe a posição de outro card.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------------
+                            Atualizar Imagens
+                        ----------------------->
+                        <div id="atualizarImagens">
+                            <h3>Atualizar Imagens</h3>
+                            <p>
+                                Esta função realiza a atualização das imagens de identificação de todos os canais vídeo de um dispositivo no dashboard, 
+                                chamadas de <b>Thumbnails</b>.</p>
+                            <p>
+                                Entretanto, câmeras IP conectadas à gravadores podem exibir uma <b>Thumbnail</b> incompleta, nesses casos, 
+                                ao realizar <b>Play</b> no dashboard de algum canal, após alguns segundos de reprodução um trecho da imagem 
+                                exibida no vídeo é capturado e salvo para ser exibido como <b>Thumbnail</b> deste canal no dashboard.
+                            </p>
+
+                            <div class="panel-group" id="atualizarImagensParent">
+                                <div class="panel panel-default">
+                                    <div id="atualizarImagensExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#atualizarImagensParent" href="#atualizarImagensCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para atualizar as imagens (thumbnails)?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="atualizarImagensCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>No dashboard de dispositivos, escolha o dispositivo que deseja atualizar, e no card dele clique sobre o botão
+                                                     <img class="icons" src="../resources/img/overflowMenuIcon.svg">;</li>
+                                                <li>Clique em <b>Atualizar Imagens</b>.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="atualizarImagens2Exp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#atualizarImagensParent" href="#atualizarImagens2Collapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para atualizar as imagens que são exibidas incompletas?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="atualizarImagens2Collapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>No dashboard de dispositivos, escolha o canal do dispositivo que deseja atualizar, e na thumbnail dele 
+                                                    clique no botão <img class="icons" src="../resources/img/PlayIcon.svg">;</li>
+                                                <li>Depois de alguns segundos (dois ou três), clique no botão 
+                                                    <img class="icons" src="../resources/img/pauseIcon.svg"> para salvar a imagem.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------------
+                          Ordenar Dispositivos 
+                        ----------------------->
+                        <div id="ordenarDispositivos">
+                            <h3>Ordenar Dispositivos</h3>
+                            <p>A opção de <b>Ordenar Dispositivos</b> disponível no aplicativo permite ao usuário ordenar os dispositivos no dashboard 
+                                em ordem alfabética (0-9 e A-Z).
+
+                            <div class="panel-group" id="zoomParent">
+                                <div class="panel panel-default">
+                                    <div id="ordenarDispositivosExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ordenarDispositivosParent" href="#ordenarDispositivosCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para ordenar meus dispositivos?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="ordenarDispositivosCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Clique no botão <img style="margin-left: 0px;" src="../resources/img/menuIcon.svg"> para abrir o menu lateral;</li>
+                                                <li>Clique sobre o botão <b>Ordenar Dispositivos</b>.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------------
+                          Ultima Visualização
+                        ----------------------->
+                        <div id="ultimaVisualizacao">
+                            <h3>Última Visualização</h3>
+                            <p>Esta função permite que o usuário acesse de forma rápida os últimos canais visualizados. Além disso, ao reabrir o aplicativo retornar a exibição dos 
+                                últimos canais em reprodução.
+                            </p>
+
+                            <div class="panel-group" id="ultimaVisualizacaoParent">
+                                <div class="panel panel-default">
+                                    <div id="ultimaVisualizacaoExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ultimaVisualizacaoParent" href="#ultimaVisualizacaoCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço acessar a ultima visualização com o aplicativo aberto?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="ultimaVisualizacaoCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>A partir do dashboard do aplicativo, clique no botão <img style="margin-left: 0px;" src="../resources/img/menuIcon.svg"> 
+                                                    no canto superior esquerdo;</li>
+                                                <li>Clique em <b>Última Visualização</b>.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------------
+                            Recarregar Vídeo 
+                        ----------------------->
+                        <div id="recarregarVideo">
+                            <h3>Recarregar Vídeo</h3>
+                            <p>Esta função permite uma nova tentativa de exibição de um vídeo que não pôde ser carregado.</p>
+
+                            <div class="panel-group" id="recarregarParent">
+                                <div class="panel panel-default">
+                                    <div id="recarregarVideoExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#recarregarParent" href="#recarregarCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para tentar recarregar um vídeo?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="recarregarCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>No grid de exibição do vídeo, clique no botão <img class="icons" src="../resources/img/loopIcon.svg">.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------------
+                              Zoom Digital 
+                        ----------------------->
+                        <div id="zoomDigital">
+                            <h3>Zoom Digital</h3>
+                            <p>A opção de Zoom Digital está disponível no aplicativo e permite ao usuário visualizar com mais clareza detalhes do vídeo.
+
+                            <p><b>ATENÇÃO:</b> Nos casos de câmeras com resolução 4K, pode haver perda de qualidade ao realizar o zoom em smartphones com sistema operacional iOS.</p>
+
+                            <div class="panel-group" id="zoomParent">
+                                <div class="panel panel-default">
+                                    <div id="zoomDigitalExp" class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#zoomDigitalParent" href="#zoomDigitalCollapse" aria-expanded="false">
+                                                &nbsp &nbsp 
+                                                Como faço para realizar o Zoom na visualização?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="zoomDigitalCollapse" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ol>
+                                                <li>Clique em um canal no dashboard;</li>
+                                                <li>Na visualização do canal, aplique o movimento de abertura de pinça para aplicar o Zoom (Zoom In);</li>
+                                                <li>Para voltar, aplique o movimento de fechamento de pinça para remover o Zoom (Zoom Out).</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                           Barra de Ferramentas 
+                    --------------------------------->
+                    <section id="barraDeFerramentas">
+                        <h2>Barra de Ferramentas</h2>
+                        <p>A barra de ferramentas do ISIC Lite fica localizada na tela de visualização do aplicativo, com ela você usufrui de diversas funcionalidades como:
+                            <ul>
+                                <li>Play e pause; <a style="font-size: 0.7em;">(até a versão 2.0)</a></li>
+                                <li>Captura de foto;</li>
+                                <li>Captura de vídeo;</li>
+                                <li>Áudio bi-direcional;</li>
+                                <li>Áudio;</li>
+                                <li>Troca de stream;</li>
+                                <li>Orientação em modo paisagem;</li>
+                                <li>PTZ.</li>
+                            </ul>
+                        </p>
+
+                        <!----------------------
+                              Play / Pause 
+                        ----------------------->
+                        <div class="panel-group" id="barraDeFerramentasParent">
+                            <div class="panel panel-default">
+                                <div id="playPause" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#playPauseCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para pausar um vídeo? <a style="font-size: 0.7em;">(até a versão 2.0)</a>
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="playPauseCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/pauseIcon.svg"> na barra de ferramentas;</li>
+                                            <li>Clique no botão<img class="icons" src="../resources/img/PlayIcon.svg">para retomar o vídeo.</li>
+                                            <a href="#controleDeVideo">Clique aqui para saber como utilizar na versão 2.1</a>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        <!----------------------
+                                  Foto 
+                        ----------------------->
+                            <div class="panel panel-default">
+                                <div id="foto" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#fotoCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para capturar uma foto de um vídeo?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="fotoCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/photoCameraIcon.svg">
+                                                 na barra de ferramentas;</li>
+                                            <li>A imagem será salva na galeria do seu smartphone.</li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                        <!----------------------
+                                  Video 
+                        ----------------------->
+                            <div class="panel panel-default">
+                                <div id="video" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#videoCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para capturar um trecho de vídeo?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="videoCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/videoCameraIcon.svg"> na 
+                                                barra de ferramentas para iniciar a captura;</li>
+                                            <li>Clique no ícone <img class="icons" src="../resources/img/stopIcon.svg"> para interromper a captura e salvar o 
+                                                trecho de vídeo na galeria do seu smartphone;</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                              Audio Bi-direcional 
+                            ----------------------->
+                            <div class="panel panel-default">
+                                <div id="biDirecional" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#biDirecionalCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para habilitar o áudio bi-direcional?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="biDirecionalCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/microphoneOffIcon.svg"> 
+                                                na barra de ferramentas para habilitar o áudio bi-direcional;</li>
+                                            <li>Clique no botão <img class="icons" src="../resources/img/microphoneOnIcon.svg"> para desabilitar o áudio
+                                                 bi-direcional.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                                     Audio
+                            ----------------------->
+                            <div class="panel panel-default">
+                                <div id="audio" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#audioCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para habilitar o áudio de um canal?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="audioCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/speakerOffIcon.svg"> na barra de 
+                                                ferramentas para habilitar o áudio;</li>
+                                            <li>Clique no botão <img class="icons" src="../resources/img/speakerOnIcon.svg"> para desabilitar o áudio.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                                 Troca de Stream 
+                            ----------------------->
+                            <div class="panel panel-default">
+                                <div id="trocaDeStream" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#trocaDeStreamCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para alterar a stream de vídeo de um canal?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="trocaDeStreamCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização no modo <b>Ao Vivo</b> clique no botão 
+                                                <img style="margin-left: 0;" src="../resources/img/hdIcon.svg"> 
+                                                na barra de ferramentas alterar a <b>Stream de Vídeo</b>.</li>
+                                            <p><b>ATENÇÃO: só é possivel alterar o stream de vídeo na reprodução <i>Ao Vivo</i>.</b></p>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                             Orientação de Exibição 
+                            ----------------------->
+                            <div class="panel panel-default">
+                                <div id="orientacaoPaisagem" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#orientacaoPaisagemCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para alterar a orientação da visualização?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="orientacaoPaisagemCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização clique no botão <img class="icons" src="../resources/img/landscapeIcon.svg"> 
+                                                na barra de ferramentas;</li>
+                                            <li>No modo paisagem, clique no botão <img class="icons" src="../resources/img/portraitIcon.svg"> 
+                                                na barra de ferramentas 
+                                            para voltar ao modo retrato.</li>
+                                            ou
+                                            <li>Com a <b>rotação automatica</b> do smartphone habilitada, na tela de visualização vire seu smartphone na horizontal;</li>
+                                            <li>Vire o seu smartphone na vertical para voltar ao modo retrato.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                                Favoritos
+                    --------------------------------->
+                    <section id="favoritos">
+                        <h2>Favoritos</h2>
+                        <p>O <b>ISIC Lite</b> permite ao usuário agrupar canais de um mesmo dispositivo ou de diversos como <b>Favorito</b> para iniciar a visualização 
+                        destes em apenas dois cliques.</p>
+                        <p>A função de criar um favorito se refere às câmeras. Por padrão, ao abrir um favorito, o mesmo será aberto em mosaico de 4 canais, de forma a 
+                        permitir o playback. Caso deseje mosaico de 9 ou 16 canais, basta selecionar as opções clicando nos botões durante a exibição.</p>
+                        
+                        <div class="panel-group" id="favoriteParent">
+                            <div class="panel panel-default">
+                                <div id="favorites" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#favoriteParent" href="#favoriteCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para criar um favorito com canais de diferentes dispositivos?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="favoriteCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>No Dashboard de dispositivos, selecione os canais desejados (<a style="color: #00a335" href="#selecaoMultipla">clique aqui</a>
+                                            para saber como);</li>
+                                            <li>Clique no botão <img class="icons" src="../resources/img/favoritesIcon.svg">;</li>
+                                            <li>Insira o nome do favorito;</li>
+                                            <li>Clique em <b>Adicionar</b.></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                <div id="favorites2" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#favoriteParent" href="#easyFavoriteCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para criar um favorito com os canais em visualização?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="easyFavoriteCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>Na tela de visualização, clique no botão <img class="icons" src="../resources/img/favoritesIcon.svg">;</li>
+                                            <li>Insira o nome do favorito;</li>
+                                            <li>Clique em <b>Adicionar</b.></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                                 Alarme 
+                    --------------------------------->
+                    <section id="alarme">
+                        <h2>Alarme</h2>
+                        <p>Com o <b>ISIC Lite</b> você pode acionar as saídas de alarme do seu <b>Gravador</b>, <b>Câmera</b> ou <b>Multibox</b> com apenas dois cliques.</br>
+                        Através do aplicativo você também pode alterar o nome e o método de acionamento de uma saída para que se mantenha acionada por tempo determinado.
+                        </p>
+                        <div class="panel-group" id="alarmeParent">
+                            <div class="panel panel-default">
+                                <div id="alarmeLocal" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#alarmeParent" href="#alarmeLocalCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para acionar a saída de alarme do meu Gravador ou Câmera?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="alarmeLocalCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>No Dashboard de dispositivos, clique no botão <img class="icons" src="../resources/img/alarmLocalIcon.svg"> 
+                                                no card do dispositivo;</li>
+                                            <li>Arraste o botão para direita para acionar ou para esquerda para desacionar a saída de alarme.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----
+                                TO DO
+
+                            Como faço para detectar um Multibox?
+                        
+                            ----->
+                            <div class="panel panel-default">
+                                <div id="multibox" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#alarmeParent" href="#multiboxCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para acionar a saída de alarme do meu Multibox?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="multiboxCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>No Dashboard de dispositivos (tela principal), clique no botão 
+                                                <img class="icons" src="../resources/img/multiboxIconNew.svg">
+                                                 no card do dispositivo;</li>
+                                            <li>Arraste o botão para direita para acionar ou para esquerda para desacionar a saída de alarme.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="nomeSaida" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#alarmeParent" href="#nomeSaidaCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para alterar o nome de uma saída de alarme?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="nomeSaidaCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>No Dashboard de dispositivos, clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no card do dispositivo;</li>
+                                            <li>Clique sobre a opção <b>Configurações</b>;</li>
+                                            <li>Clique sobre a opção <b>Alarme</b>;</li>
+                                            <li>Expanda os alarmes e clique na <img class="icons" src="../resources/img/ic_config_24.svg"> do alarme desejado;</li>
+                                            <li>Insira o novo nome no campo “Nome da saída”</li>
+                                            <li>
+                                                <ul class="os-selection">
+                                                    <li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+                                                        Clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+                                                        <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                    <li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+                                                        Clique no botão <b>OK</b> no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                </ul>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="tipoAcionamento" class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#alarmeParent" href="#tipoAcionamentoCollapse" aria-expanded="false">
+                                        &nbsp &nbsp 
+                                        Como faço para alterar o tipo de acionamento de uma saída de alarme?
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="tipoAcionamentoCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>No Dashboard de dispositivos, clique no botão <img class="icons" src="../resources/img/overflowMenuIcon.svg"> no card do dispositivo;</li>                                            
+                                            <li>Clique sobre a opção <b>Configurações</b>;</li>
+                                            <li>Clique sobre a opção <b>Alarme</b>;</li>
+                                            <li>Expanda os alarmes e clique na <img class="icons" src="../resources/img/ic_config_24.svg"> do alarme desejado;</li>
+                                            <li>Altere para o modo desejado e, caso defina o tipo de saída para “Botão”, configure o tempo que a saída ficará ativa;</li>
+                                            <li>
+                                                <ul class="os-selection">
+                                                    <li><img id="android-icon" class="icons" src="../resources/img/androidIcon.svg"> 
+                                                        Clique no botão <img class="icons" src="../resources/img/checkIcon.svg"> no canto 
+                                                        <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                    <li><img id="apple-icon" class="icons" src="../resources/img/iosIcon.png">
+                                                        Clique no botão <b>OK</b> no canto <b>superior direito</b> da tela do aplicativo para salvar.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><b>Obs:</b> O tipo de saída “Interruptor”, caso ativado, se mantem ativo até ser desativado. Já a saída do tipo “Botão” ficará 
+                                            ativa durante o tempo configurado no campo “Duração do acionamento”. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="line"></div>
+                    <!--------------------------------
+                          Importar Dispositivos 
+                    --------------------------------->
+                    <section id="importarDispositivos">
+                        <h2>Importar Dispositivos</h2>
+                        <p>O <b>ISIC Lite 2.0</b> permite que o usuário faça a importação dos dispositivos e favoritos do <b>ISIC 6</b>, de forma simples 
+                        e rápida.</p>                        
+
+                        <div class="panel panel-default">
+                            <div id="importarDisp" class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#barraDeFerramentasParent" href="#importarDispCollapse" aria-expanded="false">
+                                    &nbsp &nbsp 
+                                    Como faço para importar os dispositivos do meu ISIC 6?
+                                </a>
+                            </h4>
+                            </div>
+                            <div id="importarDispCollapse" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>Atualize o ISIC 6 caso ainda não o tenha feito. A versão que permite a exportação é a 3.40.16</li>
+                                        <li>Caso o seu celular tenha o <b>Android 10</b> ou superior:</li>
+                                            <ol type="a">
+                                                <li>Permite apenas a exportação dos dispositivos, uma vez que o ISIC 6 não é compatível com o Android.</li>
+                                                <li>Ao abrir o ISIC 6, o usuário irá visualizar uma caixa de diálogo conforme abaixo: </br>
+                                                    <img src="../resources/img/infoExport.png" style="width: 250px; height: 250px;"></li>
+                                                <li>Ao clicar em <b>Gerar Backup</b> o ISIC 6 irá criar um arquivo de backup dos dispositivos para ser lido pelo
+                                                    ISIC Lite e direcionar o usuário para a tela de Download do ISIC Lite na Google Play Store.</li>
+                                                <li>Caso o usuário já tenha feito o download, basta que ele clique em <b>Abrir</b> para abrir o ISIC Lite.</li>
+                                            </ol>
+                                        <li>Caso o seu celular tenha <b>Android 9</b> ou inferior:</li>
+                                            <ol type="a">
+                                                <li>Permite o uso normal do ISIC 6. Clique no menu e na opção <b>Exportar Dispositivos</b></br>
+                                                    <img src="../resources/img/buttonExpor.png" style="width: 250px; height: 250px;"></li>
+                                                <li>O ISIC 6 irá criar um arquivo de backup dos dispositivos para ser lido pelo ISIC Lite, exibir a caixa
+                                                    de diálogo informando que o backup foi gerado com sucesso e direcionar o usuário para a tela de Download do ISIC Lite na 
+                                                    Google Play ou Apple Store.</li>
+                                                <li>Caso o usuário já tenha feito o download, basta que ele clique em <b>Abrir</b> para abrir o ISIC Lite.</li>
+                                            </ol>
+                                        <li>Ao abrir o ISIC Lite o aplicativo irá buscar o arquivo de backup automaticamente e em seguida exibir a seguinte mensagem:</br>
+                                            <img src="../resources/img/feedbackImport.png" style="width: 250px; height: 300px;"></li>
+                                            <ol type="a">
+                                                <li>Clique em SIM e os dispositivos que estavam no ISIC 6 serão importados para o ISIC Lite.</li>
+                                                <p><b>ATENÇÃO:</b> As notificações precisarão ser configuradas novamente no aplicativo.</p>
+                                                <li>Caso o usuário clique em NÃO e queira importar depois, ele precisará voltar ao ISIC 6 e exportar os dados novamente.</li>
+                                            </ol>                                        
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>                      
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                                  Ajuda
+                    --------------------------------->
+                    <section id="ajuda">
+                        <h2>Ajuda</h2>
+                    
+                        <div class="line2"></div>
+
+                        <h3>Erro ao Cadastrar Dispositivo</h3>
+
+                        <h4 id="filtroIP">Bloqueio de Filtro IP</h4>
+                        <p>A função de <b>Filtro IP</b> está disponível nos gravadores e câmeras IP da Intelbras, essa função permite que o usuário gerencie os IPs 
+                            que poderão se conectar ao gravador, para saber mais sobre essa função consulte o manual do seu produto.</br>
+                            Caso o erro <b>Bloqueio de Filtro IP</b> seja exibido na adição ou edição do seu dispositivo Intelbras desabilite a função de 
+                            <b>Filtro IP</b> no seu dispositivo.
+                        </p>
+
+                        <div class="panel-group" id="filtroIPParent">
+                            <div class="panel panel-default">
+                                <div id="interfaceNova" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filtroIPParent" href="#novaInterfaceCollapse" aria-expanded="false">
+                                            &nbsp &nbsp 
+                                            Desabilitando o Filtro IP na Antiga Interface 
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="novaInterfaceCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                        <ol>
+                                            <li>No meu inicial da interface local do seu dispositivo, clique com o botão direito sobre a tela;</li>
+                                            <li>Na lista de opções clique em <b>Menu Principal</b>;</li>
+                                            <li>Na tela do Menu Principal na parte de <b>Ajustes</b> clique em <b>Rede</b> ;</li>
+                                            <li>Em rede clique em <b>Filtro IP</b>;</li>
+                                            <li>Na tela Filtro IP clique sobre o checkbox habilitado para desabilita-lo;</li>
+                                            <li>Clique em <b>Salvar</b>.</li>
+
+                                            <iframe class="youtube"
+                                            src="https://youtube.com/embed/m9aNKP5j1bg">
+                                            </iframe>
+
+                                        </ol>
+                                    
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="interfaceAntiga" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filtroIPParent" href="#antigaInterfaceCollapse" aria-expanded="false">
+                                            &nbsp &nbsp 
+                                            Desabilitando o Filtro IP na Nova Interface
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="antigaInterfaceCollapse" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                        <ol>
+                                            <li>No meu inicial da interface local do seu dispositivo, clique com o botão direito sobre a tela;</li>
+                                            <li>Na lista de opções clique em <b>Menu Principal</b>;</li>
+                                            <li>Na tela do Menu Principal na parte de <b>Configurações</b> clique em <b>Rede</b> ;</li>
+                                            <li>Em rede clique em <b>Filtro IP</b>;</li>
+                                            <li>Na tela Filtro IP clique sobre o checkbox habilitado para desabilita-lo;</li>
+                                            <li>Clique em <b>Aplicar</b>.</li>
+
+                                            <iframe class="youtube"
+                                            src="https://youtube.com/embed/m9aNKP5j1bg">
+                                            </iframe>
+
+                                        </ol> 
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                            Dúvidas Frequentes 
+                    --------------------------------->
+                    <section id="faq">
+                        <h2>Dúvidas Frequentes</h2>
+                    </section>
+
+                    <table style="width:100%">
+                        <tr>
+                          <th>Não consigo acessar um dispositivo externo via IP externo ou DDNS</th>
+                          <td>Verifique se a porta de serviço utilizada no dispositivo está redirecionada em seu roteador.</br>
+                            Obs.: para o correto funcionamento as portas internas e externas utilizadas na regra de redirecionamento devem ser as mesmas.</td> 
+                        </tr>
+                        <tr>
+                          <th>Caso o meu aparelho não consiga fazer a leitura do QR Code, o que fazer?</th>
+                          <td>Você poderá fazer a adição do dispositivo por <b>Serial</b>. O passo a passo de como fazer adição por serial está neste manual dentro da seção 
+                              <b>Adição de Dispositivos</b> > <b>Cloud</b>.</td> 
+                        </tr>
+                        <tr>
+                            <th>Ao visualizar o mosaico, algumas imagens aparecem invertidas ou incompletas.</th>
+                            <td>
+                                Isso pode ocorrer por lentidão na rede, tanto do local onde o dispositivo Intelbras está instalado como da rede móvel do usuário. 
+                                Quando isso ocorrer, basta abrir a imagem ou mover o mosaico para a próxima página que a imagem volta ao normal.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Qual taxa de média de upload deve estar disponível para os DVRs e NVRs Intelbras para uso do ISIC Lite?</th>
+                            <td>
+                                A taxa de upload corresponde ao consumo(em bits/s) sendo requerido do link em determinado instante de tempo.</br></br>
+                                
+                                O consumo de upload total depende:</br>
+                                Da quantidade de acessos naquele momento;</br>
+                                Da banda utilizada por cada um deles.</br></br>
+                                
+                                Como calcular:</br>
+                                Determine o consumo de cada acesso;</br>
+                                O consumo total é igual à soma dos consumos de cada acesso.</br></br>
+                                
+                                Exemplo</br>
+                                Dado que tenha 2 acessos simultâneos:</br>
+                                1º acesso: 3 câmeras usando stream principal (1024 Kbps), 1 câmera em stream extra (128 Kbps);</br>
+                                2º acesso: 2 câmeras usando stream extra (128 Kbps; 256 Kbps).</br></br>
+                                
+                                Cálculo:</br>
+                                Consumo acesso 1 = 3 x 1024 + 128 = 3200 Kbps</br>
+                                Consumo acesso 2 = 128 + 256 = 384 Kbps</br>
+                                Consumo total de upload = 3200 + 384 = 3584 Kbps</br></br>
+                                
+                                Sendo assim, neste instante de tempo, todos os acessos demandam 3584 Kbps de upload.                                 
+                            </td>
+                        </tr>
+                      </table>
+
+
+                    <div class="line"></div>
+
+                    <!--------------------------------
+                               Fale Conosco 
+                    --------------------------------->
+                    <section id="faleconosco">
+                        <h2>Fale Conosco</h2>
+                        <p><strong>Suporte a clientes:</strong> (48) 2106 0006</p>
+                        <p><strong>Fórum:</strong> <a class="link" href="http://forum.intelbras.com.br"
+                                target="blank">forum.intelbras.com.br</a></p>
+                        <p><strong>Suporte via chat e e-mail:</strong> <a
+                                class="link" href="http://suporte-tecnico.intelbras.com.br/contato-suporte-tecnico"
+                                target="blank">http://suporte-tecnico.intelbras.com.br/contato-suporte-tecnico</a></p>
+                        <p><strong>SAC:</strong> 0800 704 2767</p>
+                        <p><strong>Onde comprar? Quem instala?:</strong> 0800 724 5115</p>
+                        <p>Produzido por: Intelbras S/A – Indústria de Telecomunicação Eletrônica Brasileira</p>
+                        <p>Rodovia BR 101, km 210 – Área Industrial – São José/SC – 88104-800</p>
+                        <p><a class="link" href="https://www.intelbras.com/pt-br/" target="blank">www.intelbras.com/pt-br/</a></p>
+                        <p>Indústria Brasileira</p>
+                    </section>
+
+                    <div class="line"></div>
+
+
+				</div>		
+			</main>
+			<footer class="footer border footer-shadow">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col text-center">
+							<p class="mb-0">
+								<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script>
+		function clickAccordion(param){
+			document.getElementById('hamburger').click();	
+			var item = document.getElementById(param.id);
+			item.click();	
+		}
+	</script>
+</body>
+</html>
